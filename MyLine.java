@@ -8,6 +8,10 @@ public class MyLine {
         this.begin = new MyPoint(x1, y1);
         this.end = new MyPoint (x2,y2);
     }
+    public MyLine(MyPoint begin, MyPoint end) {
+        this.begin = begin;
+        this.end = end;
+    }
     //Getters and setters.
      public MyPoint getBegin() {
         return this.begin;
