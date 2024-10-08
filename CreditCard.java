@@ -36,8 +36,12 @@ public void charge(Money amount) {
     }
 }
 //a simple method updated the balance with the payment amount.
-public void payment(Money amount){
-    balance = balance.subtract(amount);
+public void payment(Money amount) {
+    if (amount.compareTo(balance) > 0) {
+        System.out.println("Payment denied: Amount exceeds current balance.");
+    } else {
+        balance = balance.subtract(amount);
+    }
 }
 
 }
