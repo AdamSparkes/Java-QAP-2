@@ -57,6 +57,9 @@ public class Money {
             return -1;  
         }
     }
+    public boolean equals(Money other) {
+        return this.dollars == other.dollars && this.cents == other.cents;
+    }
 
     // toString method
     public String toString() {
