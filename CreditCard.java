@@ -12,15 +12,15 @@ public CreditCard(Person cardHolder, Money limit){
 //getters
 
 public Money getBalance(){
-    return new Money(this.balance);
+    return this.balance;
 }
 public Money getCreditLimit(){
-    return new Money(creditLimit);  
+    return creditLimit;  
 }
 //accessor method for availible credit
 public Money getAvailableCredit() {
     Money availableCredit = creditLimit.subtract(balance);
-    return new Money(availableCredit);
+    return availableCredit;
 }
 //accessor method to aquire the details of the owner using the toString method from Person.java
 public String getPersonals(){
